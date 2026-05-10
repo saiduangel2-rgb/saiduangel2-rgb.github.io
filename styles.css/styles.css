@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: deeppink;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: bisque;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.scholarship {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0. 1);
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #1a365d;
+    margin-top: 0;
+}
+
+a {
+    background-color: #2b6cb0;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:hover {
+    background-color: #1a365d;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
