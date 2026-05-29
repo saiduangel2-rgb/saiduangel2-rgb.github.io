@@ -1,5 +1,7 @@
 document.querySelectorAll('.apply-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+
         const oldStatus = btn.nextElementSibling;
         if (oldStatus && oldStatus.id === 'status') oldStatus.remove();
 
@@ -8,11 +10,9 @@ document.querySelectorAll('.apply-btn').forEach(btn => {
         status.innerHTML = '<span class="spinner"></>spanOpening link...';
         btn.insertAdjacentElement('afterend', status);
 
-        const url = btn.href;
         setTimeout(() => {
-            window.open(url, '_blank');
-        }, 10000);
-        
-        setTimeout(() => status.remove(), 10000);
+            window.open(btn.href, '_blank');
+        status.remove();
+        }, 800);
     });
 });
